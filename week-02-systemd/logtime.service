@@ -1,0 +1,21 @@
+[Unit]
+Description=Log Current Time Every 10 Seconds
+After=network.target
+
+[Service]
+ExecStart=/opt/custom_services/logtime.sh
+Restart=on-failure
+RestartSec=2
+TimeoutStopSec=5
+KillSignal=SIGTERM
+StandardOutput=journal
+StandardError=journal
+User=logtime
+Group=logtime
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectHome=true
+ProtectSystem=strict
+
+[Install]
+WantedBy=multi-user.target
