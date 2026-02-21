@@ -31,15 +31,15 @@ sudo systemctl enable --now logtime.service
 
 ### 4) Verify
 ```bash
-systemctl status logtime.service
-journalctl -u logtime.service -f
+systemctl status logtime.service --no-pager
+journalctl -u logtime.service -f --no-pager
 
 ```
 
 ### 5) Troubleshooting
 ```bash
-systemctl status logtime.service
-journalctl -u logtime.service --since "10 minutes ago"
+systemctl status logtime.service --no-pager
+journalctl -u logtime.service --since "10 minutes ago" --no-pager
 ```
 
 ## Hardening Notes
