@@ -5,11 +5,14 @@ Hands-on Linux/DevOps lab work. This repository is organized by week, with each 
 ## What this repo demonstrates
 - Linux fundamentals used in operations work (permissions, users/groups, troubleshooting)
 - Service management with systemd + journald logging
+- Network diagnostics, packet capture (`tcpdump`), and OSI-model troubleshooting
 - Basic hardening mindset (least privilege, safe defaults)
 - Repeatable, documented steps (runbook style)
 
 ## Labs
+- [Week 01 — Foundation, user isolation, and SSH hardening](week-01-security/README.md)
 - [Week 02 — systemd service + journald + hardening](week-02-systemd/README.md)
+- [Week 03 — tcpdump packet capture & OSI troubleshooting](week-03-networking/README.md)
 
 ## Notes
 - Lab-only content. No secrets are stored here (no SSH private keys, tokens, passwords).
